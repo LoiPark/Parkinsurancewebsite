@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Park Insurance Corp - Compensation Disclosure. Understand how we are compensated for our services."
+    />
+    <title>Compensation Disclosure | Park Insurance Corp</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <div class="logo-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">PARK INSURANCE</span>
+            <span class="logo-tagline">Insurance & Financial Services</span>
+          </div>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item" data-dropdown="solutions">
+              <button
+                class="nav-link"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Solutions
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <a href="/auto.html" class="dropdown-item" role="menuitem">
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"
+                      ></path>
+                      <circle cx="6.5" cy="16.5" r="2.5"></circle>
+                      <circle cx="16.5" cy="16.5" r="2.5"></circle>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Auto</span>
+                  </div>
+                </a>
+                <a href="/home.html" class="dropdown-item" role="menuitem">
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                      ></path>
+                      <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Home</span>
+                  </div>
+                </a>
+                <a
+                  href="/health-medicare.html"
+                  class="dropdown-item"
+                  role="menuitem"
+                >
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Health and Medicare</span>
+                  </div>
+                </a>
+                <a
+                  href="/commercial.html"
+                  class="dropdown-item"
+                  role="menuitem"
+                >
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect
+                        width="16"
+                        height="20"
+                        x="4"
+                        y="2"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M9 22v-4h6v4"></path>
+                      <path d="M8 6h.01"></path>
+                      <path d="M16 6h.01"></path>
+                      <path d="M12 6h.01"></path>
+                      <path d="M12 10h.01"></path>
+                      <path d="M12 14h.01"></path>
+                      <path d="M16 10h.01"></path>
+                      <path d="M16 14h.01"></path>
+                      <path d="M8 10h.01"></path>
+                      <path d="M8 14h.01"></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Commercial</span>
+                  </div>
+                </a>
+                <a
+                  href="/life-insurance.html"
+                  class="dropdown-item"
+                  role="menuitem"
+                >
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Life Insurance</span>
+                  </div>
+                </a>
+                <a
+                  href="/financial-planning.html"
+                  class="dropdown-item"
+                  role="menuitem"
+                >
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+                      <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
+                      <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title"
+                      >Annuities, IRA, Financial Planning</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="/#about" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="/contact.html" class="contact-btn">
+            Contact us
+            <span class="contact-btn-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+          <button class="mobile-menu-btn" aria-label="Open menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-header">
+        <a href="/" class="logo">
+          <div class="logo-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">PARK INSURANCE</span>
+            <span class="logo-tagline">Insurance & Financial Services</span>
+          </div>
+        </a>
+        <button class="mobile-nav-close" aria-label="Close menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a href="/" class="mobile-nav-link">Home</a>
+        </li>
+        <li class="mobile-nav-item" data-mobile-dropdown="solutions">
+          <button class="mobile-nav-link">
+            Solutions
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="mobile-dropdown">
+            <a href="/auto.html" class="mobile-dropdown-link">Auto</a>
+            <a href="/home.html" class="mobile-dropdown-link">Home</a>
+            <a href="/health-medicare.html" class="mobile-dropdown-link"
+              >Health and Medicare</a
+            >
+            <a href="/commercial.html" class="mobile-dropdown-link"
+              >Commercial</a
+            >
+            <a href="/life-insurance.html" class="mobile-dropdown-link"
+              >Life Insurance</a
+            >
+            <a href="/financial-planning.html" class="mobile-dropdown-link"
+              >Annuities, IRA, Financial Planning</a
+            >
+          </div>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/#about" class="mobile-nav-link">About Us</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/contact.html" class="mobile-nav-link">Contact Us</a>
+        </li>
+        <li class="mobile-nav-item mobile-nav-cta">
+          <a href="/contact.html" class="contact-btn">
+            Contact us
+            <span class="contact-btn-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Legal Content -->
+    <main class="legal-main">
+      <div class="legal-container">
+        <h1 class="legal-title">Compensation Disclosure</h1>
+        <p class="legal-updated">Last Updated: 1/16/2025</p>
+        
+        <div class="legal-intro reveal">
+          <p>This Compensation Disclosure explains how Park Insurance ("Company," "we," "us," or "our") is compensated for the insurance and financial services we provide. Transparency is important to us, and we want you to understand how we are paid and how compensation may relate to the services or products we recommend.</p>
+        </div>
+
+        <section class="legal-section reveal">
+          <h2>1. Types of Compensation</h2>
+          <p>We may receive compensation in one or more of the following forms:</p>
+          
+          <h3>a. Commissions</h3>
+          <ul>
+            <li>We may receive commissions from insurance carriers or financial institutions when a policy or product is issued or maintained.</li>
+            <li>Commission amounts may vary depending on the product, provider, coverage type, or other factors.</li>
+          </ul>
+
+          <h3>b. Fees Paid by Clients</h3>
+          <p>In certain situations, we may charge fees directly to clients for services such as consulting, advisory services, policy reviews, or administrative work.</p>
+          <ul>
+            <li>Any client-paid fees will be disclosed to you in advance and agreed upon before services are rendered.</li>
+          </ul>
+
+          <h3>c. Other Compensation</h3>
+          <p>We may also receive:</p>
+          <ul>
+            <li>Renewal commissions</li>
+            <li>Performance-based incentives</li>
+            <li>Bonuses or non-cash compensation (e.g., training support, marketing assistance, or technology resources)</li>
+          </ul>
+          <p>These forms of compensation are provided by third-party insurers or financial institutions and are not paid directly by clients unless disclosed.</p>
+        </section>
+
+        <section class="legal-section reveal">
+          <h2>2. Impact on Recommendations</h2>
+          <ul>
+            <li>Compensation may vary between products or providers.</li>
+            <li>While compensation is a factor in how insurance and financial services are structured industry-wide, we strive to make recommendations based on your needs, objectives, and suitability requirements, as required by applicable law.</li>
+            <li>Where legally required, we act in the best interest of the client.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section reveal">
+          <h2>3. No Additional Cost to Clients (Unless Disclosed)</h2>
+          <p>In many cases:</p>
+          <ul>
+            <li>Commissions are paid by the insurance carrier or product provider and are included in the cost of the product.</li>
+            <li>Clients typically do not pay additional amounts beyond premiums or disclosed fees.</li>
+          </ul>
+          <p>If any additional costs apply, they will be disclosed prior to commitment.</p>
+        </section>
+
+        <section class="legal-section reveal">
+          <h2>4. Conflicts of Interest</h2>
+          <p>Because compensation may differ among products or providers, potential conflicts of interest may arise.</p>
+          <p>We maintain internal policies and procedures designed to:</p>
+          <ul>
+            <li>Identify potential conflicts</li>
+            <li>Manage or mitigate those conflicts</li>
+            <li>Disclose material conflicts where required</li>
+          </ul>
+          <p>You may request additional information regarding compensation or conflicts at any time.</p>
+        </section>
+
+        <section class="legal-section reveal">
+          <h2>5. Client Right to Information</h2>
+          <p>You have the right to ask:</p>
+          <ul>
+            <li>How we are compensated for a specific product or service</li>
+            <li>Whether alternative products or compensation structures are available</li>
+          </ul>
+          <p>We will provide reasonable information upon request.</p>
+        </section>
+
+        <section class="legal-section reveal">
+          <h2>6. Regulatory Compliance</h2>
+          <p>We operate in accordance with applicable insurance and financial services laws and regulations, including licensing and disclosure requirements imposed by regulatory authorities.</p>
+        </section>
+
+        <section class="legal-section reveal">
+          <h2>7. Acceptance of Disclosure</h2>
+          <p>By engaging our services or proceeding with any insurance or financial product through us, you acknowledge that you have received, read, and understood this Compensation Disclosure.</p>
+        </section>
+
+        <section class="legal-section reveal">
+          <h2>8. Contact Information</h2>
+          <p>If you have questions regarding this disclosure or our compensation practices, please contact us:</p>
+          <div class="legal-contact">
+            <p><strong>Park Insurance</strong></p>
+            <p>Phone: <a href="tel:8139369000">813-936-9000</a></p>
+            <p>Address: 4410 W Hillsborough Ave., Suite M, Tampa, FL 33614</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="solution-footer">
+      <div class="solution-footer-fireflies">
+        <div class="solution-footer-firefly"></div>
+        <div class="solution-footer-firefly"></div>
+        <div class="solution-footer-firefly"></div>
+        <div class="solution-footer-firefly"></div>
+        <div class="solution-footer-firefly"></div>
+        <div class="solution-footer-firefly"></div>
+        <div class="solution-footer-firefly"></div>
+        <div class="solution-footer-firefly"></div>
+      </div>
+      <div class="solution-footer-container">
+        <div class="solution-footer-logo">
+          <div class="solution-footer-logo-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="solution-footer-logo-text">
+            <span class="solution-footer-logo-name">PARK INSURANCE</span>
+            <span class="solution-footer-logo-tagline"
+              >Insurance & Financial Services</span
+            >
+          </div>
+        </div>
+
+        <div class="solution-footer-grid">
+          <div class="solution-footer-column">
+            <h4>Solutions</h4>
+            <nav class="solution-footer-links">
+              <a href="/auto.html" class="solution-footer-link"
+                >Auto Insurance</a
+              >
+              <a href="/home.html" class="solution-footer-link"
+                >Home Insurance</a
+              >
+              <a href="/health-medicare.html" class="solution-footer-link"
+                >Health & Medicare</a
+              >
+              <a href="/commercial.html" class="solution-footer-link"
+                >Commercial Insurance</a
+              >
+              <a href="/life-insurance.html" class="solution-footer-link"
+                >Life Insurance</a
+              >
+              <a href="/financial-planning.html" class="solution-footer-link"
+                >Financial Services</a
+              >
+            </nav>
+          </div>
+
+          <div class="solution-footer-column">
+            <h4>Company</h4>
+            <nav class="solution-footer-links">
+              <a href="/#about" class="solution-footer-link">About Us</a>
+              <a href="/contact.html" class="solution-footer-link"
+                >Contact us</a
+              >
+            </nav>
+          </div>
+        </div>
+
+        <div class="solution-footer-bottom">
+          <div class="solution-footer-legal">
+            <a href="/terms-of-use.html" class="solution-footer-legal-link">Terms of Use</a>
+            <a href="/privacy-policy.html" class="solution-footer-legal-link">Privacy Policy</a>
+            <a href="/terms-of-business.html" class="solution-footer-legal-link"
+              >Terms of Business Arrangement</a
+            >
+            <a href="/compensation-disclosure.html" class="solution-footer-legal-link"
+              >Compensation Disclosure</a
+            >
+          </div>
+          <p class="solution-footer-copyright">
+            © 2026 Park Insurance Corp. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/pages/legal/compensation-disclosure.js"></script>
+  </body>
+</html>
+

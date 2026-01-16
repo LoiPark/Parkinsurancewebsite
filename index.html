@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Park Insurance Corp - Protect today. Illuminate tomorrow. Your trusted partner for auto, home, health, life insurance and financial planning."
+    />
+    <title>Park Insurance Corp | Insurance & Financial Services</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">PARK INSURANCE</span>
+            <span class="logo-tagline">Insurance & Financial Services</span>
+          </div>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item" data-dropdown="solutions">
+              <button
+                class="nav-link"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Solutions
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <a href="/auto.html" class="dropdown-item" role="menuitem">
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"
+                      ></path>
+                      <circle cx="6.5" cy="16.5" r="2.5"></circle>
+                      <circle cx="16.5" cy="16.5" r="2.5"></circle>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Auto</span>
+                  </div>
+                </a>
+                <a href="/home.html" class="dropdown-item" role="menuitem">
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                      ></path>
+                      <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Home</span>
+                  </div>
+                </a>
+                <a
+                  href="/health-medicare.html"
+                  class="dropdown-item"
+                  role="menuitem"
+                >
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Health and Medicare</span>
+                  </div>
+                </a>
+                <a
+                  href="/commercial.html"
+                  class="dropdown-item"
+                  role="menuitem"
+                >
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect
+                        width="16"
+                        height="20"
+                        x="4"
+                        y="2"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M9 22v-4h6v4"></path>
+                      <path d="M8 6h.01"></path>
+                      <path d="M16 6h.01"></path>
+                      <path d="M12 6h.01"></path>
+                      <path d="M12 10h.01"></path>
+                      <path d="M12 14h.01"></path>
+                      <path d="M16 10h.01"></path>
+                      <path d="M16 14h.01"></path>
+                      <path d="M8 10h.01"></path>
+                      <path d="M8 14h.01"></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Commercial</span>
+                  </div>
+                </a>
+                <a
+                  href="/life-insurance.html"
+                  class="dropdown-item"
+                  role="menuitem"
+                >
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Life Insurance</span>
+                  </div>
+                </a>
+                <a
+                  href="/financial-planning.html"
+                  class="dropdown-item"
+                  role="menuitem"
+                >
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+                      <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
+                      <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title"
+                      >Annuities, IRA, Financial Planning</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="/contact.html" class="contact-btn">
+            Contact us
+            <span class="contact-btn-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+          <button class="mobile-menu-btn" aria-label="Open menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-header">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">PARK INSURANCE</span>
+            <span class="logo-tagline">Insurance & Financial Services</span>
+          </div>
+        </a>
+        <button class="mobile-nav-close" aria-label="Close menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link">Home</a>
+        </li>
+        <li class="mobile-nav-item" data-mobile-dropdown="solutions">
+          <button class="mobile-nav-link">
+            Solutions
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="mobile-dropdown">
+            <a href="/auto.html" class="mobile-dropdown-link">Auto</a>
+            <a href="/home.html" class="mobile-dropdown-link">Home</a>
+            <a href="/health-medicare.html" class="mobile-dropdown-link"
+              >Health and Medicare</a
+            >
+            <a href="/commercial.html" class="mobile-dropdown-link"
+              >Commercial</a
+            >
+            <a href="/life-insurance.html" class="mobile-dropdown-link"
+              >Life Insurance</a
+            >
+            <a href="/financial-planning.html" class="mobile-dropdown-link"
+              >Annuities, IRA, Financial Planning</a
+            >
+          </div>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="#about" class="mobile-nav-link">About Us</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/contact.html" class="mobile-nav-link">Contact Us</a>
+        </li>
+        <li class="mobile-nav-item mobile-nav-cta">
+          <a href="/contact.html" class="contact-btn">
+            Contact us
+            <span class="contact-btn-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-slides">
+        <div
+          class="hero-slide active"
+          style="background-image: url('/images/Hero Background Image 1.jpg')"
+        ></div>
+        <div
+          class="hero-slide"
+          style="background-image: url('/images/Hero Background Image 2.jpg')"
+        ></div>
+        <div
+          class="hero-slide"
+          style="background-image: url('/images/Hero Background Image 3.jpg')"
+        ></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-headline">
+          <h1 class="hero-title">We insure what matters<br />most to you.</h1>
+        </div>
+        <div class="hero-cta">
+          <h2 class="hero-tagline">Smile today. <br />Plan for tomorrow.</h2>
+          <p class="hero-description">
+            At Park Insurance, we offer comprehensive coverage solutions
+            tailored to protect what matters most to you.
+          </p>
+          <a href="/contact.html" class="hero-btn">
+            Talk to an agent
+            <span class="hero-btn-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-indicators">
+        <button
+          class="hero-indicator active"
+          data-slide="0"
+          aria-label="Go to slide 1"
+        ></button>
+        <button
+          class="hero-indicator"
+          data-slide="1"
+          aria-label="Go to slide 2"
+        ></button>
+        <button
+          class="hero-indicator"
+          data-slide="2"
+          aria-label="Go to slide 3"
+        ></button>
+      </div>
+
+      <button
+        class="hero-control"
+        aria-label="Pause slideshow"
+        data-playing="true"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="6" y="4" width="4" height="16"></rect>
+          <rect x="14" y="4" width="4" height="16"></rect>
+        </svg>
+      </button>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="expertise" id="expertise">
+      <div class="expertise-container">
+        <div class="expertise-grid">
+          <div class="expertise-image-wrapper">
+            <img
+              src="/images/Expertise Image.jpg"
+              alt="Expertise"
+              class="expertise-image"
+              id="expertise-image"
+            />
+          </div>
+          <div class="expertise-content">
+            <div class="expertise-tabs">
+              <button class="expertise-tab active" data-tab="expertise">
+                Expertise
+              </button>
+              <button class="expertise-tab" data-tab="support">Support</button>
+            </div>
+
+            <div class="expertise-tab-content active" data-content="expertise">
+              <span class="expertise-label">Relatable industry experts</span>
+              <p class="expertise-description">
+                Our agents have years of experience in the industries they
+                insure, giving them unique perspectives and expertise they'll
+                share as they work alongside you.
+              </p>
+              <a href="/contact.html" class="expertise-link">
+                Talk to an agent
+                <span class="expertise-link-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </div>
+
+            <div class="expertise-tab-content" data-content="support">
+              <span class="expertise-label">Always here for you</span>
+              <p class="expertise-description">
+                When you need us, we're here. Our dedicated support team
+                provides personalized assistance to help you navigate any
+                situation with confidence.
+              </p>
+              <a href="/contact.html" class="expertise-link">
+                Get support
+                <span class="expertise-link-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions Coverage Section -->
+    <section class="solutions" id="solutions">
+      <div class="solutions-sticky-container">
+        <div class="solutions-backgrounds">
+          <div
+            class="solutions-bg active"
+            data-bg="auto"
+            style="background-image: url('/images/Auto Background Image.jpg')"
+          ></div>
+          <div
+            class="solutions-bg"
+            data-bg="home"
+            style="background-image: url('/images/Home Background Image.jpg')"
+          ></div>
+          <div
+            class="solutions-bg"
+            data-bg="health-medicare"
+            style="
+              background-image: url('/images/Health and Medicare Background Image.jpg');
+            "
+          ></div>
+          <div
+            class="solutions-bg"
+            data-bg="commercial"
+            style="
+              background-image: url('/images/Commerical Background Image.jpg');
+            "
+          ></div>
+          <div
+            class="solutions-bg"
+            data-bg="life-insurance"
+            style="
+              background-image: url('/images/Life Insurance Background Image.jpg');
+            "
+          ></div>
+          <div
+            class="solutions-bg"
+            data-bg="annuities"
+            style="
+              background-image: url('/images/Annuities, IRA, Financial Planning Background Image.jpg');
+            "
+          ></div>
+        </div>
+        <div class="solutions-overlay"></div>
+
+        <div class="solutions-content">
+          <div class="solutions-info">
+            <div class="solutions-description">
+              <p class="solutions-desc-text active" data-desc="auto">
+                Protect your vehicle with comprehensive coverage tailored to
+                your driving needs. From liability to collision, we have you
+                covered on every road.
+              </p>
+              <p class="solutions-desc-text" data-desc="home">
+                Your home is your sanctuary. Our homeowners insurance protects
+                what matters most, from structure to belongings and everything
+                in between.
+              </p>
+              <p class="solutions-desc-text" data-desc="health-medicare">
+                Navigate the healthcare landscape with confidence. We offer
+                comprehensive health plans and Medicare solutions for every
+                stage of life.
+              </p>
+              <p class="solutions-desc-text" data-desc="commercial">
+                Safeguard your business with coverage designed for your
+                industry. From liability to property protection, we understand
+                what your business needs.
+              </p>
+              <p class="solutions-desc-text" data-desc="life-insurance">
+                Secure your family's future with life insurance that provides
+                peace of mind. Build a legacy that protects the ones you love.
+              </p>
+              <p class="solutions-desc-text" data-desc="annuities">
+                Plan for tomorrow with our comprehensive financial services.
+                From retirement planning to wealth management, we help you
+                achieve your goals.
+              </p>
+              <a href="/auto.html" class="solutions-learn-btn">
+                Learn more
+                <span class="solutions-learn-btn-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="solutions-list-wrapper">
+            <div class="solutions-list">
+              <button class="solutions-item active" data-solution="auto">
+                Auto
+              </button>
+              <button class="solutions-item" data-solution="home">Home</button>
+              <button class="solutions-item" data-solution="health-medicare">
+                Health and Medicare
+              </button>
+              <button class="solutions-item" data-solution="commercial">
+                Commercial
+              </button>
+              <button class="solutions-item" data-solution="life-insurance">
+                Life Insurance
+              </button>
+              <button class="solutions-item" data-solution="annuities">
+                Annuities, IRA, Financial Planning
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="solutions-indicator">
+          <span class="solutions-indicator-dot"></span>
+          <span class="solutions-indicator-text">Scroll to explore</span>
+        </div>
+      </div>
+
+      <div class="solutions-panels">
+        <div class="solutions-panel" data-panel="auto" id="auto"></div>
+        <div class="solutions-panel" data-panel="home" id="home"></div>
+        <div
+          class="solutions-panel"
+          data-panel="health-medicare"
+          id="health-medicare"
+        ></div>
+        <div
+          class="solutions-panel"
+          data-panel="commercial"
+          id="commercial"
+        ></div>
+        <div
+          class="solutions-panel"
+          data-panel="life-insurance"
+          id="life-insurance"
+        ></div>
+        <div
+          class="solutions-panel"
+          data-panel="annuities"
+          id="annuities"
+        ></div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+      <div
+        class="footer-bg"
+        style="background-image: url('/images/Footer Background Image.jpg')"
+      ></div>
+
+      <div class="fireflies">
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+        <div class="firefly"></div>
+      </div>
+
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="footer-logo-text">
+            <span class="footer-logo-name">PARK INSURANCE</span>
+            <span class="footer-logo-tagline"
+              >Insurance & Financial Services</span
+            >
+          </div>
+        </div>
+
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h4>Solutions</h4>
+            <nav class="footer-links">
+              <a href="#auto" class="footer-link">Auto Insurance</a>
+              <a href="#home" class="footer-link">Home Insurance</a>
+              <a href="#health-medicare" class="footer-link"
+                >Health & Medicare</a
+              >
+              <a href="#commercial" class="footer-link">Commercial Insurance</a>
+              <a href="#life-insurance" class="footer-link">Life Insurance</a>
+              <a href="#annuities" class="footer-link">Financial Services</a>
+            </nav>
+          </div>
+
+          <div class="footer-column">
+            <h4>Company</h4>
+            <nav class="footer-links">
+              <a href="#about" class="footer-link">About Us</a>
+              <a href="/contact.html" class="footer-link">Contact us</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <div class="footer-legal-links">
+            <a href="/terms-of-use.html" class="footer-legal-link"
+              >Terms of Use</a
+            >
+            <a href="/privacy-policy.html" class="footer-legal-link"
+              >Privacy Policy</a
+            >
+            <a href="/terms-of-business.html" class="footer-legal-link"
+              >Terms of Business Arrangement</a
+            >
+            <a href="/compensation-disclosure.html" class="footer-legal-link"
+              >Compensation Disclosure</a
+            >
+          </div>
+          <p class="footer-copyright">
+            © 2026 Park Insurance Corp. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

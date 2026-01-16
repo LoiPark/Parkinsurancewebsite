@@ -1,0 +1,175 @@
+/* ========================================
+   Auto Page - Facts Subsection Styles
+   ======================================== */
+
+.solution-facts {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-gray-100);
+}
+
+.solution-facts-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+}
+
+.solution-facts-title {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--spacing-3xl);
+}
+
+/* Stats Grid */
+.solution-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-3xl);
+  margin-bottom: var(--spacing-3xl);
+}
+
+.solution-stat {
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid var(--color-gray-300);
+}
+
+.solution-stat-label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-sm);
+}
+
+.solution-stat-value {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: var(--spacing-md);
+}
+
+.solution-stat-description {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+.solution-stat-source {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: var(--spacing-sm);
+}
+
+/* Coverage Card */
+.solution-coverage-card {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-2xl);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+}
+
+.solution-coverage-card-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--color-dark);
+  letter-spacing: -0.02em;
+}
+
+.solution-coverage-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md) var(--spacing-xl);
+}
+
+.solution-coverage-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.solution-coverage-item-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: var(--spacing-xs);
+}
+
+.solution-coverage-item-text {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .solution-coverage-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .solution-facts {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .solution-facts-container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .solution-stats {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+  
+  .solution-coverage-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .solution-coverage-card {
+    padding: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .solution-facts {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .solution-facts-container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .solution-stats {
+    gap: var(--spacing-lg);
+  }
+  
+  .solution-stat-number {
+    font-size: 2rem;
+  }
+  
+  .solution-stat-label {
+    font-size: 0.85rem;
+  }
+  
+  .solution-coverage-card {
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+  }
+  
+  .solution-coverage-title {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .solution-coverage-item-title {
+    font-size: 0.85rem;
+  }
+  
+  .solution-coverage-item-text {
+    font-size: 0.7rem;
+  }
+}
+

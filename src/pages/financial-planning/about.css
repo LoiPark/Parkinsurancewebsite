@@ -1,0 +1,237 @@
+/* ========================================
+   Auto Page - About Subsection Styles
+   ======================================== */
+
+.solution-about {
+  padding: var(--spacing-4xl) 0;
+  background-color: var(--color-off-white);
+}
+
+.solution-about-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+}
+
+/* Intro Section */
+.solution-about-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-4xl);
+}
+
+.solution-about-headline {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: var(--color-text);
+  letter-spacing: 0.0em;
+  margin-bottom: var(--spacing-lg);
+}
+
+.solution-about-subtext {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+/* Coverage Section */
+.solution-coverage {
+  max-width: 700px;
+  margin: 0 auto var(--spacing-4xl);
+  text-align: center;
+}
+
+.solution-coverage-title {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 400;
+  color: var(--color-text);
+  letter-spacing: 0.0em;
+  margin-bottom: var(--spacing-md);
+}
+
+.solution-coverage-text {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.solution-coverage-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) var(--spacing-xl);
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  border-radius: var(--radius-full);
+  font-weight: 400;
+  font-size: 1.25rem;
+  width: fit-content;
+  transition: all var(--transition-base);
+}
+
+.solution-coverage-btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.solution-coverage-btn-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.solution-coverage-btn-icon svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-light);
+}
+
+/* Feature Cards */
+.solution-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-3xl);
+}
+
+.solution-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.solution-feature:nth-child(even) {
+  direction: rtl;
+}
+
+.solution-feature:nth-child(even) > * {
+  direction: ltr;
+}
+
+.solution-feature-image1, .solution-feature-image2 {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.solution-feature-image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 60%;
+}
+.solution-feature-image2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 10% 30%;
+}
+
+.solution-feature-content {
+  padding: var(--spacing-lg) 0;
+}
+
+.solution-feature-title {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+  margin-bottom: var(--spacing-md);
+}
+
+.solution-feature-text {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .solution-features {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-3xl);
+  }
+  
+  .solution-feature {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .solution-about {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .solution-about-container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .solution-feature,
+  .solution-feature:nth-child(even) {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+  
+  .solution-feature-image1,
+  .solution-feature-image2 {
+    order: 1;
+  }
+  
+  .solution-feature-content {
+    order: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .solution-about {
+    padding: var(--spacing-xl) 0;
+  }
+  
+  .solution-about-container {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .solution-about-header {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .solution-about-headline {
+    font-size: 0.7rem;
+  }
+  
+  .solution-about-title {
+    font-size: 1.5rem;
+  }
+  
+  .solution-features {
+    gap: var(--spacing-xl);
+  }
+  
+  .solution-feature {
+    gap: var(--spacing-md);
+  }
+  
+  .solution-feature-image1,
+  .solution-feature-image2 {
+    border-radius: var(--radius-lg);
+  }
+  
+  .solution-feature-headline {
+    font-size: 0.65rem;
+  }
+  
+  .solution-feature-title {
+    font-size: 1.25rem;
+  }
+  
+  .solution-feature-text {
+    font-size: 0.85rem;
+  }
+}
+

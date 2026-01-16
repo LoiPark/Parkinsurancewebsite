@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Park Insurance Corp - Get in touch with our insurance experts for auto, home, health, commercial, life insurance, and financial planning."
+    />
+    <title>Contact Us | Park Insurance Corp</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="/" class="logo">
+          <div class="logo-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">PARK INSURANCE</span>
+            <span class="logo-tagline">Insurance & Financial Services</span>
+          </div>
+        </a>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item" data-dropdown="solutions">
+              <button
+                class="nav-link"
+                aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Solutions
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="dropdown-menu" role="menu">
+                <a href="/auto.html" class="dropdown-item" role="menuitem">
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a1 1 0 0 0-.8-.4H5.24a2 2 0 0 0-1.8 1.1l-.8 1.63A6 6 0 0 0 2 12.42V16h2"
+                      ></path>
+                      <circle cx="6.5" cy="16.5" r="2.5"></circle>
+                      <circle cx="16.5" cy="16.5" r="2.5"></circle>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Auto</span>
+                  </div>
+                </a>
+                <a href="/home.html" class="dropdown-item" role="menuitem">
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                      ></path>
+                      <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Home</span>
+                  </div>
+                </a>
+                <a
+                  href="/health-medicare.html"
+                  class="dropdown-item"
+                  role="menuitem"
+                >
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Health and Medicare</span>
+                  </div>
+                </a>
+                <a
+                  href="/commercial.html"
+                  class="dropdown-item"
+                  role="menuitem"
+                >
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect
+                        width="16"
+                        height="20"
+                        x="4"
+                        y="2"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M9 22v-4h6v4"></path>
+                      <path d="M8 6h.01"></path>
+                      <path d="M16 6h.01"></path>
+                      <path d="M12 6h.01"></path>
+                      <path d="M12 10h.01"></path>
+                      <path d="M12 14h.01"></path>
+                      <path d="M16 10h.01"></path>
+                      <path d="M16 14h.01"></path>
+                      <path d="M8 10h.01"></path>
+                      <path d="M8 14h.01"></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Commercial</span>
+                  </div>
+                </a>
+                <a
+                  href="/life-insurance.html"
+                  class="dropdown-item"
+                  role="menuitem"
+                >
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title">Life Insurance</span>
+                  </div>
+                </a>
+                <a
+                  href="/financial-planning.html"
+                  class="dropdown-item"
+                  role="menuitem"
+                >
+                  <div class="dropdown-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"></path>
+                      <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"></path>
+                      <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"></path>
+                    </svg>
+                  </div>
+                  <div class="dropdown-text">
+                    <span class="dropdown-title"
+                      >Annuities, IRA, Financial Planning</span
+                    >
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="/#about" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="/contact.html" class="contact-btn">
+            Contact us
+            <span class="contact-btn-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+          <button class="mobile-menu-btn" aria-label="Open menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-header">
+        <a href="/" class="logo">
+          <div class="logo-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">PARK INSURANCE</span>
+            <span class="logo-tagline">Insurance & Financial Services</span>
+          </div>
+        </a>
+        <button class="mobile-nav-close" aria-label="Close menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a href="/" class="mobile-nav-link">Home</a>
+        </li>
+        <li class="mobile-nav-item" data-mobile-dropdown="solutions">
+          <button class="mobile-nav-link">
+            Solutions
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="mobile-dropdown">
+            <a href="/auto.html" class="mobile-dropdown-link">Auto</a>
+            <a href="/home.html" class="mobile-dropdown-link">Home</a>
+            <a href="/health-medicare.html" class="mobile-dropdown-link"
+              >Health and Medicare</a
+            >
+            <a href="/commercial.html" class="mobile-dropdown-link"
+              >Commercial</a
+            >
+            <a href="/life-insurance.html" class="mobile-dropdown-link"
+              >Life Insurance</a
+            >
+            <a href="/financial-planning.html" class="mobile-dropdown-link"
+              >Annuities, IRA, Financial Planning</a
+            >
+          </div>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/#about" class="mobile-nav-link">About Us</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="/contact.html" class="mobile-nav-link">Contact Us</a>
+        </li>
+        <li class="mobile-nav-item mobile-nav-cta">
+          <a href="/contact.html" class="contact-btn">
+            Contact us
+            <span class="contact-btn-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="contact-hero">
+      <div class="contact-hero-container">
+        <h1 class="contact-hero-title">We're here to help.</h1>
+        <p class="contact-hero-description">
+          Whether you prefer to connect via email, chat on the phone or have one
+          of our agents reach out to you, we've got you covered.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+      <div class="contact-form-container">
+        <div id="form-message" class="form-message"></div>
+
+        <form id="contact-form" class="contact-form" method="POST" action="#">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName" class="form-label required"
+                >First Name</label
+              >
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                class="form-input"
+                required
+                placeholder="John"
+              />
+            </div>
+            <div class="form-group">
+              <label for="lastName" class="form-label required"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                class="form-input"
+                required
+                placeholder="Doe"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label required">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                required
+                placeholder="john.doe@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label required"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form-input"
+                required
+                placeholder="(555) 123-4567"
+              />
+            </div>
+          </div>
+
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="address" class="form-label">Address</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                class="form-input"
+                placeholder="123 Main Street"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="city" class="form-label">City</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                class="form-input"
+                placeholder="New York"
+              />
+            </div>
+            <div class="form-group">
+              <label for="state" class="form-label">State</label>
+              <input
+                type="text"
+                id="state"
+                name="state"
+                class="form-input"
+                placeholder="NY"
+                maxlength="2"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="zipCode" class="form-label">Zip Code</label>
+              <input
+                type="text"
+                id="zipCode"
+                name="zipCode"
+                class="form-input"
+                placeholder="10001"
+                maxlength="10"
+              />
+            </div>
+            <div class="form-group"></div>
+          </div>
+
+          <div class="form-topics">
+            <label class="form-topics-label required"
+              >Topics you'd like to discuss</label
+            >
+            <div class="form-checkboxes">
+              <div class="form-checkbox-group">
+                <input
+                  type="checkbox"
+                  id="topic-auto"
+                  name="topics"
+                  value="Auto"
+                  class="form-checkbox"
+                />
+                <label for="topic-auto" class="form-checkbox-label">Auto</label>
+              </div>
+              <div class="form-checkbox-group">
+                <input
+                  type="checkbox"
+                  id="topic-home"
+                  name="topics"
+                  value="Home"
+                  class="form-checkbox"
+                />
+                <label for="topic-home" class="form-checkbox-label">Home</label>
+              </div>
+              <div class="form-checkbox-group">
+                <input
+                  type="checkbox"
+                  id="topic-health"
+                  name="topics"
+                  value="Health and Medicare"
+                  class="form-checkbox"
+                />
+                <label for="topic-health" class="form-checkbox-label"
+                  >Health and Medicare</label
+                >
+              </div>
+              <div class="form-checkbox-group">
+                <input
+                  type="checkbox"
+                  id="topic-commercial"
+                  name="topics"
+                  value="Commercial"
+                  class="form-checkbox"
+                />
+                <label for="topic-commercial" class="form-checkbox-label"
+                  >Commercial</label
+                >
+              </div>
+              <div class="form-checkbox-group">
+                <input
+                  type="checkbox"
+                  id="topic-life"
+                  name="topics"
+                  value="Life Insurance"
+                  class="form-checkbox"
+                />
+                <label for="topic-life" class="form-checkbox-label"
+                  >Life Insurance</label
+                >
+              </div>
+              <div class="form-checkbox-group">
+                <input
+                  type="checkbox"
+                  id="topic-financial"
+                  name="topics"
+                  value="Annuities, IRA, Financial Planning"
+                  class="form-checkbox"
+                />
+                <label for="topic-financial" class="form-checkbox-label"
+                  >Annuities, IRA, Financial Planning</label
+                >
+              </div>
+              <div class="form-checkbox-group">
+                <input
+                  type="checkbox"
+                  id="topic-other"
+                  name="topics"
+                  value="Other"
+                  class="form-checkbox"
+                />
+                <label for="topic-other" class="form-checkbox-label"
+                  >Other</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row full">
+            <div class="form-group">
+              <label for="comments" class="form-label"
+                >Comments or Questions</label
+              >
+              <textarea
+                id="comments"
+                name="comments"
+                class="form-textarea"
+                placeholder="Tell us how we can help you..."
+              ></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="form-submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <script type="module" src="/src/pages/contact/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,334 @@
+/* ========================================
+   Solutions Coverage Section Styles
+   ======================================== */
+
+.solutions {
+  position: relative;
+  background-color: var(--color-dark);
+}
+
+.solutions-sticky-container {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Background Images */
+.solutions-backgrounds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.solutions-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.solutions-bg.active {
+  opacity: 1;
+}
+
+/* Overlay */
+.solutions-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  z-index: 1;
+}
+
+/* Content Grid */
+.solutions-content {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+}
+
+/* Left Side - Description */
+.solutions-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: var(--spacing-4xl);
+}
+
+.solutions-description {
+  max-width: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.solutions-desc-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all var(--transition-base);
+  font-family: var(--font-sans);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  position: absolute;
+  inset: 0 auto auto 0;
+  pointer-events: none;
+  font-size: 1.5rem;
+}
+
+.solutions-desc-text.active {
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+  inset: auto;
+  pointer-events: auto;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+}
+
+.solutions-learn-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-md) var(--spacing-xl);
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  border-radius: var(--radius-full);
+  font-weight: 400;
+  font-size: 1.25rem;
+  width: fit-content;
+  transition: all var(--transition-base);
+}
+
+.solutions-learn-btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.solutions-learn-btn-icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-dark);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solutions-learn-btn-icon svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-light);
+}
+
+/* Right Side - Solutions List */
+.solutions-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--spacing-2xl) 0;
+  padding-top: 15vh;
+  overflow: hidden;
+  height: 100%;
+}
+
+.solutions-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  transition: transform 0.5s ease-out;
+}
+
+.solutions-item {
+  font-family: var(--font-sans);
+  font-size: clamp(1.75rem, 4vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.25);
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+.solutions-item:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.solutions-item.active {
+  color: var(--color-primary);
+}
+
+/* Visibility states for scrolling list */
+.solutions-item.is-prev {
+  color: rgba(255, 255, 255, 0.35);
+  opacity: 1;
+}
+
+.solutions-item.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Scroll Panels (for IntersectionObserver) */
+.solutions-panels {
+  position: relative;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.solutions-panel {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section Indicator */
+.solutions-indicator {
+  position: absolute;
+  bottom: var(--spacing-xl);
+  left: var(--spacing-xl);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.solutions-indicator-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+.solutions-indicator-text {
+  font-size: 0.75rem;
+  color: var(--color-light);
+  opacity: 0.7;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .solutions-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .solutions-list-wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    padding: var(--spacing-xl);
+    max-height: 50vh;
+  }
+  
+  .solutions-list {
+    align-items: center;
+  }
+  
+  .solutions-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--spacing-2xl);
+  }
+  
+  .solutions-description {
+    max-width: 100%;
+  }
+  
+  .solutions-item {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .solutions-info {
+    padding: var(--spacing-lg);
+  }
+  
+  .solutions-list-wrapper {
+    padding: var(--spacing-md);
+  }
+  
+  .solutions-item {
+    font-size: 1.25rem;
+  }
+  
+  .solutions-indicator {
+    bottom: var(--spacing-md);
+    left: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .solutions {
+    margin: var(--spacing-xs);
+    border-radius: var(--radius-lg);
+  }
+  
+  .solutions-info {
+    padding: var(--spacing-md);
+  }
+  
+  .solutions-title {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .solutions-description {
+    font-size: 0.9rem;
+  }
+  
+  .solutions-list-wrapper {
+    padding: var(--spacing-sm);
+  }
+  
+  .solutions-item {
+    font-size: 1rem;
+    padding: var(--spacing-xs) 0;
+  }
+  
+  .solutions-btn {
+    font-size: 0.9rem;
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+  
+  .solutions-indicator {
+    bottom: var(--spacing-sm);
+    left: var(--spacing-sm);
+    font-size: 0.75rem;
+  }
+}
+
