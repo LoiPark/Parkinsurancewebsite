@@ -152,6 +152,12 @@
   margin-bottom: var(--spacing-3xl);
 }
 
+.solution-footer-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
 .solution-footer-logo-icon {
   width: 40px;
   height: 40px;
