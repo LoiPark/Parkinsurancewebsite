@@ -1,0 +1,60 @@
+{
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/home.html",
+      "permanent": false
+    },
+    {
+      "source": "/auto",
+      "destination": "/auto.html",
+      "permanent": false
+    },
+    {
+      "source": "/commercial",
+      "destination": "/commercial.html",
+      "permanent": false
+    },
+    {
+      "source": "/health-medicare",
+      "destination": "/health-medicare.html",
+      "permanent": false
+    },
+    {
+      "source": "/life-insurance",
+      "destination": "/life-insurance.html",
+      "permanent": false
+    },
+    {
+      "source": "/financial-planning",
+      "destination": "/financial-planning.html",
+      "permanent": false
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": false
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html",
+      "permanent": false
+    },
+    {
+      "source": "/terms-of-use",
+      "destination": "/terms-of-use.html",
+      "permanent": false
+    },
+    {
+      "source": "/terms-of-business",
+      "destination": "/terms-of-business.html",
+      "permanent": false
+    },
+    {
+      "source": "/compensation-disclosure",
+      "destination": "/compensation-disclosure.html",
+      "permanent": false
+    }
+  ]
+}
+
